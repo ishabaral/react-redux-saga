@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { connect } from "react-redux";
+import "./App.css";
+import Button from "./component/Button";
+import Loading from "./component/Loading";
+import Users from "./component/Users";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3>Users name</h3>
+      <Button />
+      <Loading />
+      <Users />
     </div>
   );
 }
-
 export default App;
